@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego de Preguntas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="inicio">
+    <h1>Bienvenido</h1>
+    <form id="playerForm">
+      <label for="nombre">Nombre del jugador:</label>
+      <input type="text" id="nombre" required />
+      <button type="submit">Comenzar</button>
+    </form>
+    <div id="errorNombre" style="color:red; font-weight:bold;"></div>
+  </div>
+
+  <div id="juego" class="hidden">
+    <div id="temporizador">Tiempo restante: 60:00</div>
+    <div id="preguntaContainer"></div>
+    <button onclick="siguientePregunta()">Siguiente</button>
+  </div>
+
+  <div id="resultado" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
